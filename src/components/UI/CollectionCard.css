@@ -1,0 +1,74 @@
+.collectiondata_bg {
+    cursor: pointer;
+    position: relative;
+}
+
+.collectiondata_bg img {
+    border-radius: 0.4rem;
+    height: 15.5rem;
+    width: 12.5rem;
+    object-fit: cover;
+    margin-right: 0.4rem;
+}
+
+.collectiondata_txt {
+    position: absolute;
+    bottom: 0.6rem;
+    left: 0.5rem;
+}
+
+.collectiondata_txt h4 {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--white-font);
+}
+
+.collectiondata_txt p {
+    font-weight: 300;
+    color: var(--white-font);
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.collectiondata_txt p svg {
+    margin-left: 0.5rem;
+}
+
+/* Responsive Style */
+
+@media only screen and (max-width: 1199px) {
+    .collectiondata_bg img {
+        width: 11rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .collectiondata_bg img {
+        width: 9rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .collectiondata_bg img {
+        width: 6.7rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .collectiondata_bg img {
+        width: 10rem;
+        margin-top: 0.25rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .collectiondata_bg img {
+        width: 8rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .collectiondata_bg img {
+        width: 7rem;
+    }
+}

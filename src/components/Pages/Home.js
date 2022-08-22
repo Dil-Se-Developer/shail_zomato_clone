@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../UI/Header";
 import OrderOnline from "../UI/OrderOnline";
+import Collections from "../UI/Collections";
 import "./Home.css";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <Header/>
       <OrderOnline/>
+      <Collections/>
     </>
   );
 };

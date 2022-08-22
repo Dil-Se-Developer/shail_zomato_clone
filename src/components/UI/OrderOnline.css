@@ -14,7 +14,7 @@
     transform: scale(1.07);
 }
 
-.orderonline_card img{
+.orderonline_card img {
     border-radius: 0.9rem 0.9rem 0rem 0rem;
     border: 1px solid rgb(232, 232, 232);
     object-fit: cover;
@@ -53,7 +53,7 @@
 
 @media only screen and (max-width: 1199px) {
     .orderonline_card img {
-        width: 23rem;
+        width: 24rem;
     }
 }
 
@@ -66,16 +66,30 @@
 @media only screen and (max-width: 767px) {
     .orderonline_card img {
         width: 13.5rem;
+        height: 8rem;
     }
+
     .orderonline_card_text {
         width: 13.5rem;
+        padding: 0.7rem 0rem 0.7rem 0.4rem;
+    }
+
+    .orderonline_card_text h3 {
+        font-size: 0.7rem;
+    }
+
+    .orderonline_card_text p {
+        font-size: 0.6rem;
+        margin-top: 0.3rem;
     }
 }
 
 @media only screen and (max-width: 575px) {
     .orderonline_card img {
         width: 7rem;
+        height: 7rem;
     }
+
     .orderonline_card_text {
         width: 7rem;
     }

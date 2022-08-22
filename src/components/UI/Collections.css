@@ -1,0 +1,54 @@
+.collections_heading {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 11.9%; 
+}
+
+.collections_heading h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #1c1c1c;
+    margin-bottom: 0.2rem;
+}
+
+.collections_heading p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #363636;
+    margin-bottom: 1.5rem;
+}
+
+.collections_cards {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive Style */
+
+@media only screen and (max-width: 1199px) {
+    .collections_heading {
+        padding: 0rem 2%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .collections_heading {
+        padding: 0rem 14%;
+    }
+    .collections_cards {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .collections_heading {
+        padding: 0rem 11%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .collections_heading {
+        padding: 0rem 3%;
+    }
+}
