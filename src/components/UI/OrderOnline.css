@@ -1,0 +1,82 @@
+.orderonline_section {
+    margin-top: 2.2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.orderonline_card {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.orderonline_card:hover {
+    transform: scale(1.07);
+}
+
+.orderonline_card img{
+    border-radius: 0.9rem 0.9rem 0rem 0rem;
+    border: 1px solid rgb(232, 232, 232);
+    object-fit: cover;
+    height: 9rem;
+    width: 25rem;
+}
+
+.dinning_card {
+    margin-left: 1.1rem;
+}
+
+.orderonline_card_text {
+    border: 1px solid rgb(232, 232, 232);
+    border-top: none;
+    border-radius: 0rem 0rem 0.9rem 0.9rem;
+    position: relative;
+    top: -5px;
+    padding: 0.9rem 0rem 0.9rem 0.5rem;
+}
+
+.orderonline_card_text h3 {
+    color: #363636;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.orderonline_card_text p {
+    color: #4f4f4f;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+}
+
+
+/* Responsive Style */
+
+@media only screen and (max-width: 1199px) {
+    .orderonline_card img {
+        width: 23rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .orderonline_card img {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .orderonline_card img {
+        width: 13.5rem;
+    }
+    .orderonline_card_text {
+        width: 13.5rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .orderonline_card img {
+        width: 7rem;
+    }
+    .orderonline_card_text {
+        width: 7rem;
+    }
+}

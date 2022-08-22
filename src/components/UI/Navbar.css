@@ -1,0 +1,33 @@
+.nav_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: var(--white-font);
+    padding: 0.85rem 0rem;
+}
+
+.nav_start {
+    cursor: pointer;
+}
+
+.nav_start span {
+    margin-left: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.nav_end {
+    list-style: none;
+    display: flex;
+}
+
+.nav_end li {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-right: 2rem;
+}
+
+.nav_end li:nth-child(4) {
+    margin-right: 0rem;
+}

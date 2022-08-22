@@ -1,0 +1,8 @@
+.header_section {
+    /* background-color: black; */
+    background-image: url(../../assets/header_bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
