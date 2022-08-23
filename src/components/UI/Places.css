@@ -58,11 +58,12 @@
     .places_cards {
         flex-direction: row;
         flex-wrap: wrap;
+        column-gap: 0.5rem;
     }
-
+ 
     .see_more_card {
         flex: 25%;
-        margin-left: 0.5rem;
+        /* margin-left: 0.5rem; */
     }
 
     .see_more_card svg {
@@ -89,6 +90,6 @@
 
 @media only screen and (min-width: 1200px) {
     .places_conatainer {
-        padding: 0rem 16%;
+        padding: 0rem 11%;
     }    
 }
