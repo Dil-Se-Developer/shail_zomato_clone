@@ -56,19 +56,19 @@
 
 @media only screen and (max-width: 575px) {
     .collectiondata_bg img {
-        width: 10rem;
+        width: 7rem;
         margin-top: 0.25rem;
     }
 }
 
 @media only screen and (max-width: 375px) {
     .collectiondata_bg img {
-        width: 8rem;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .collectiondata_bg img {
         width: 7rem;
     }
 }
+
+/* @media only screen and (max-width: 320px) {
+    .collectiondata_bg img {
+        width: 7rem;
+    }
+} */

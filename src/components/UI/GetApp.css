@@ -1,0 +1,205 @@
+.getapp_container {
+    background-color: rgb(255, 251, 247);
+    margin-bottom: 3rem;
+    padding: 2.5rem 1rem 1rem 1rem;
+    display: flex;
+}
+
+.getapp_img img {
+    display: none;
+}
+
+.getapp_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.getapp_info_txt {
+    text-align: center;
+}
+
+.getapp_info_txt h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--other-font-2);
+    margin-bottom: 0.9rem;
+}
+
+.getapp_info p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--other-font-1);
+    margin-bottom: 1.2rem;
+}
+
+.getapp_info_radio {
+    display: flex;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.getapp_info_radio_btn_1 input,
+.getapp_info_radio_btn_2 input {
+    width: 0.95rem;
+    height: 0.95rem;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    accent-color: rgb(239, 79, 95);
+}
+
+.getapp_info_radio label {
+    margin-left: 0.4rem;
+    position: relative;
+    top: -0.12rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--other-font-2);
+}
+
+.getapp_info_radio_btn_2 {
+    margin-left: 1rem;
+}
+
+.getapp_info_input {
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.getapp_info_input input {
+    border: 0.1rem solid rgb(207, 207, 207);
+    padding: 0.65rem 0.6rem;
+    height: 2.4rem;
+    border-radius: 0.3rem;
+    color: rgb(28, 28, 28);
+    font-size: 0.9rem;
+    outline: none;
+    width: 65%;
+}
+
+.getapp_info_input button {
+    height: 2.4rem;
+    padding: 0rem 0.8rem;
+    border-radius: 0.3rem;
+    color: var(--white-font);
+    background-color: rgb(239, 79, 95);
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-left: 0.4rem;
+}
+
+.getapp_info_download {
+    text-align: center;
+}
+
+.getapp_info_download p {
+    text-align: center;
+    font-size: 0.7rem;
+    font-size: 300;
+    color: #9c9c9c;
+    margin-bottom: 1rem;
+}
+
+.getapp_info_download img {
+    width: 137px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.getapp_info_download img:nth-child(2) {
+    margin-right: 0.6rem;
+}
+
+/* Responsive Style */
+
+@media only screen and (min-width: 576px) {
+    .getapp_container {
+        padding: 0rem 1rem 0rem 1rem;
+        align-items: center;
+    }
+
+    .getapp_img {
+        flex: 40%;
+    }
+
+    .getapp_img img {
+        display: block;
+        width: 250px;
+        height: 450px;
+        object-fit: contain;
+    }
+
+    .getapp_info_radio {
+        padding-left: 0rem;
+    }
+
+    .getapp_info {
+        flex: 60%;
+    }
+
+    .getapp_info_input {
+        padding-left: 0rem;
+    }
+
+    .getapp_info_download {
+        text-align: left;
+    }
+     
+    .getapp_info_download p {
+        text-align: left;
+    }
+
+    .getapp_info_txt {
+        text-align: left;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .getapp_container {
+        padding: 0rem 3.5% 0rem 3.5%;
+    }
+
+    .getapp_img {
+        flex: 35%;
+    }
+
+    .getapp_info {
+        flex: 70%;
+    }
+  
+}
+
+@media only screen and (min-width: 991px) {
+    .getapp_container {
+        padding: 0rem 10% 0rem 10%;
+    }
+
+    .getapp_img {
+        flex: 35%;
+    }
+
+    .getapp_info {
+        flex: 70%;
+    }
+  
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .getapp_container {
+        padding: 0rem 15% 0rem 15%;
+    }
+
+    .getapp_img {
+        flex: 35%;
+    }
+
+    .getapp_info {
+        flex: 70%;
+    }
+  
+}

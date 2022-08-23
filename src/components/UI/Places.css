@@ -1,0 +1,94 @@
+.places_conatainer {
+    padding: 0rem 1rem;
+    margin-bottom: 3rem;
+}
+
+.places_conatainer h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--other-font-1);
+    margin-bottom: 0.4rem;
+}
+
+.places_conatainer h2 span {
+    font-weight: 700;
+}
+
+.places_cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.see_more_card {
+    position: relative;
+    background-color: var(--bg-clr);
+    border: 1px solid rgb(232, 232, 232);
+    padding: 1.5rem 1.1rem;
+    border-radius: 0.4rem;
+    margin-top: 0.6rem;
+    cursor: pointer;
+}
+
+.see_more_card h4 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--black-font);
+    text-align: center;
+}
+
+.see_more_card svg {
+    position: absolute;
+    bottom: 1.45rem;
+    right: 4rem;
+}
+
+/* Responsice style */
+
+@media only screen and (min-width: 576px) {
+    .places_conatainer h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .places_conatainer span {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .places_cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .see_more_card {
+        flex: 25%;
+        margin-left: 0.5rem;
+    }
+
+    .see_more_card svg {
+        right: 1.3rem;
+        bottom: 1.8rem;
+    }
+
+    .see_more_card h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .places_conatainer h2 {
+        text-align:start;
+        font-size: 1.8rem;
+    }
+    
+    .places_conatainer span {
+        text-align: start;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .places_conatainer {
+        padding: 0rem 16%;
+    }    
+}

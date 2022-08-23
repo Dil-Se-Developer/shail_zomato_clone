@@ -9,8 +9,17 @@ export const fetchCollectionsData = createAsyncThunk(
     }
 );
 
+export const fetchPlacesData = createAsyncThunk(
+    "zomato/fetchPlacesData",
+    async () => {
+        const response = await axios.get(`http://localhost:5000/places`);
+        return response.data;
+    }
+);
+
 const defaultCollectionDataState = {
-    collectionsData: []
+    collectionsData: [],
+    placesData: []
 };
 
 const collectionDataSlice = createSlice({
@@ -21,6 +30,10 @@ const collectionDataSlice = createSlice({
         [fetchCollectionsData.fulfilled]: (state, { payload }) => {
             // console.log('Fetched data!');
             state.collectionsData = [...payload];
+        },
+        [fetchPlacesData.fulfilled]: (state, { payload }) => {
+            // console.log('Fetched data!');
+            state.placesData = [...payload];
         }
     }
 })

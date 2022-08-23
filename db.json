@@ -24,5 +24,47 @@
             "places": "5 Places",
             "collectionimg": "https://b.zmtcdn.com/data/collections/cf3ee1808f7c9233819dbcf20a8ca077_1647261043.jpg?output-format=webp"
         }
+    ],
+    "places": [
+        {
+            "id": 1,
+            "placesname": "Alkapuri",
+            "noofplaces": 297
+        },
+        {
+            "id": 2,
+            "placesname": "Vadiwadi",
+            "noofplaces": 122
+        },
+        {
+            "id": 3,
+            "placesname": "Diwalipura",
+            "noofplaces": 412
+        },
+        {
+            "id": 4,
+            "placesname": "Fatehgunj",
+            "noofplaces": 175
+        },
+        {
+            "id": 5,
+            "placesname": "Akota",
+            "noofplaces": 274
+        },
+        {
+            "id": 6,
+            "placesname": "Sayajigunj",
+            "noofplaces": 178
+        },
+        {
+            "id": 7,
+            "placesname": "Karelibaug",
+            "noofplaces": 359
+        },
+        {
+            "id": 8,
+            "placesname": "Subhanpura",
+            "noofplaces": 226
+        }
     ]
 }
