@@ -1,10 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { fetchUsers } from "../../redux_toolkit/slices/userDataSlice";
 import Modal from "../UI/Modal";
 import FormInput from "../UI/FormInput";
 import "./LoginForm.css";
 
 const LoginForm = (props) => {
   const { onClose, onOpenSignUp } = props;
+  const dispatch = useDispatch();
+  const Navigate = useNavigate();
+
+  const intialValues = {
+    emailid: "",
+  };
+
+  const [formValues, setFormValues] = useState(intialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const usersData = useSelector((state) => state.userData.UsersData);
+
+  const loginHandler = (event) => {
+    event.preventDefault();
+    setFormErrors(validate(formValues));
+
+    if (Object.keys(validate(formValues)).length === 0) {
+      const usersEmail = usersData.map((user) => user.emailid);
+      const userExist = usersEmail.includes(formValues.emailid);
+
+      if (userExist) {
+        Navigate("/dashboard");
+        onClose();
+      } else {
+        alert("Kindly Check Emailid or Create Account");
+      }
+    }
+  }
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  useEffect(() => {
+    dispatch(fetchUsers());
+  }, []);
+
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.emailid) {
+      errors.emailid = "Emailid is required!";
+    } else if (!regex.test(values.emailid)) {
+      errors.emailid = "This is not a valid email format!";
+    }
+    return errors;
+  };
+
   return (
     <Modal onClose={onClose}>
       <div className="login_section">
@@ -26,18 +77,17 @@ const LoginForm = (props) => {
         </div>
         <form className="login_form_section">
           <FormInput
-            // inputLabel="Email ID :"
             inputType="email"
             inputName="emailid"
-            // inputValue={formValues.emailid}
-            // errorMessage={formErrors.emailid}
-            // onHandleChange={handleChange}
-            // errorClass={"error_para"}
+            inputValue={formValues.emailid}
+            errorMessage={formErrors.emailid}
+            onHandleChange={handleChange}
+            errorClass={"error_para"}
             customClass={"form_input"}
             placeholder={"Email"}
           />
           <div className="form_input">
-            <button>Login</button>
+            <button onClick={loginHandler}>Login</button>
           </div>
         </form>
         <div className="login_or_section">

@@ -4,7 +4,45 @@
       "id": 1,
       "name": "Trending This Week",
       "places": "4 Places",
-      "collectionimg": "https://b.zmtcdn.com/data/collections/a9aef17423b92b3f8632c4b1887c2839_1647259955.jpg?output-format=webp"
+      "collectionimg": "https://b.zmtcdn.com/data/collections/a9aef17423b92b3f8632c4b1887c2839_1647259955.jpg?output-format=webp",
+      "foodcollection": [
+        {
+          "id": 1,
+          "restaurantname": "La Milano Pizzeria",
+          "diningreview": 3.5,
+          "delivery": 4.1,
+          "foodname": "Pizza, Pasta",
+          "resaddress": "Nizampura, Vadodara",
+          "foodimg": "https://b.zmtcdn.com/data/pictures/chains/7/19967197/364c47169e854c8b24f2e4d3784f4384.jpg?fit=around|318.75:231.25&crop=318.75:231.25;*,*"
+        },
+        {
+          "id": 2,
+          "restaurantname": "Oven Magick",
+          "diningreview": 3.5,
+          "delivery": 4.1,
+          "foodname": "Bakery",
+          "resaddress": "Alkapuri, Vadodara",
+          "foodimg": "https://b.zmtcdn.com/data/pictures/chains/1/3200051/ffea2c8d608991363c395c8aa7401ade.jpg?fit=around|318.75:231.25&crop=318.75:231.25;*,*"
+        },
+        {
+          "id": 3,
+          "restaurantname": "Peshawri",
+          "diningreview": 3.5,
+          "delivery": 4.1,
+          "foodname": "Mughlai, North Indian",
+          "resaddress": "Alkapuri, Vadodara",
+          "foodimg": "https://b.zmtcdn.com/data/reviews_photos/0f6/d17f39aaa58ea01af887c2e959e650f6_1517650313.jpg?fit=around|318.75:231.25&crop=318.75:231.25;*,*"
+        },
+        {
+          "id": 4,
+          "restaurantname": "Shreeji Farali Center",
+          "diningreview": 3.5,
+          "delivery": 4.1,
+          "foodname": "Healthy Food",
+          "resaddress": "Nizampura, Vadodara",
+          "foodimg": "https://b.zmtcdn.com/data/pictures/6/19030306/7179011cff0137d4ecac63a0c5bc65e0.jpg?fit=around|318.75:231.25&crop=318.75:231.25;*,*"
+        }
+      ]
     },
     {
       "id": 2,

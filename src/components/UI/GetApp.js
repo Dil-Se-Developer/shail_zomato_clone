@@ -19,7 +19,7 @@ const GetApp = () => {
         </div>
         <div className="getapp_info_radio">
           <div className="getapp_info_radio_btn_1">
-            <input type="radio" name="contact" value="email" id="email" checked/>
+            <input type="radio" name="contact" value="email" id="email"/>
             <label htmlFor="contact">Email</label>
           </div>
           <div className="getapp_info_radio_btn_2">

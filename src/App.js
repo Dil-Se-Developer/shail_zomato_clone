@@ -4,6 +4,7 @@ import Home from "./components/Pages/Home";
 import LoginForm from "./components/Pages/LoginForm";
 import SignUpForm from "./components/Pages/SignUpForm";
 import Dashboard from './components/Pages/Dashboard';
+import CollectionDetails from "./components/UI/CollectionDetails";
 import "./App.css";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
             <Dashboard/>
           }
         />
+        <Route path="/collectiondetail/:restaurantId" element={<CollectionDetails />} />
       </Routes>
     </>
   );

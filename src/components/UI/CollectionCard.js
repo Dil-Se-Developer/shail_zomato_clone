@@ -1,10 +1,17 @@
-import React from 'react'
-import './CollectionCard.css'
+import React from 'react';
+import { useNavigate } from "react-router-dom";
+import './CollectionCard.css';
 
 const CollectionCard = ({ collectionData }) => {
-    const { name, places, collectionimg } = collectionData;
+    const Navigate = useNavigate();
+    const { id, name, places, collectionimg } = collectionData;
+
+    const collectionDetailHandler = () => {
+        Navigate(`/collectiondetail/${id}`);
+    }
+
     return (
-        <div className='collectiondata_bg'>
+        <div className='collectiondata_bg' onClick={collectionDetailHandler}>
             <img src={collectionimg} alt='collection_img' />
             <div className='collectiondata_txt'>
                 <h4>{name}</h4>
