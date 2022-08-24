@@ -57,6 +57,7 @@
     border: none;
     margin-left: 0.6rem;
     width: 400px;
+    outline: 0;
 }
 
 .subheder_input_section input::placeholder {

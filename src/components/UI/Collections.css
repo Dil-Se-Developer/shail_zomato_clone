@@ -1,7 +1,7 @@
 .collections_heading {
     display: flex;
     flex-direction: column;
-    padding: 0rem 15.9%; 
+    padding: 0rem 11%; 
 }
 
 .collections_heading h2 {
@@ -21,7 +21,7 @@
 .collections_cards {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 /* Responsive Style */

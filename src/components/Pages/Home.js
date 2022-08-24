@@ -8,16 +8,18 @@ import ExploreNear from "../UI/ExploreNear";
 import Footer from "../UI/Footer";
 import "./Home.css";
 
-const Home = () => {
+const Home = (props) => {
+  const { onOpenLogin, onOpenSignUp } = props;
+
   return (
     <>
-      <Header/>
-      <OrderOnline/>
-      <Collections/>
-      <Places/>
-      <GetApp/>
-      <ExploreNear/>
-      <Footer/>
+      <Header onShowLoginForm={onOpenLogin} onShowSignForm={onOpenSignUp} />
+      <OrderOnline />
+      <Collections />
+      <Places />
+      <GetApp />
+      <ExploreNear />
+      <Footer />
     </>
   );
 };

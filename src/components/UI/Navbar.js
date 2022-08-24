@@ -1,7 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { onClickLogin, onClickSignUp } = props;
   return (
     <nav className="nav_section">
       <div className="nav_start">
@@ -24,8 +25,8 @@ const Navbar = () => {
       <ul className="nav_end">
         <li>Investor Relations</li>
         <li>Add restaurant</li>
-        <li>Log in</li>
-        <li>Sign up</li>
+        <li onClick={onClickLogin}>Log in</li>
+        <li onClick={onClickSignUp}>Sign up</li>
       </ul>
     </nav>
   );
