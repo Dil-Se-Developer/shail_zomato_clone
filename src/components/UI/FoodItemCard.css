@@ -1,0 +1,13 @@
+
+.restaurantcard_order_btn button{
+    background-color: #Ef4f5f;
+    border: none;
+    /* width: 50%; */
+    color: var(--white-font);
+    cursor: pointer;
+    margin-top: 0.25rem;
+    background-color: 0.4rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+}

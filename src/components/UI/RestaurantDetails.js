@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import CollectionHeader from "./CollectionHeader";
-import RestaurantCard from "./RestaurantCard";
-import ExploreNear from "./ExploreNear";
+import RestauranHeader from "./RestauranHeader";
+import FoodItemCard from "./FoodItemCard.js";
 import Footer from "./Footer";
-import "./CollectionDetails.css";
+import "./ReataurantDetail.css";
 
-const CollectionDetails = () => {
+const RestaurantDetails = (props) => {
+  const { onOpenOrderForm } = props;
   const { restaurantId } = useParams();
+  //   console.log(resproductId);
   const [restaurantsdata, setrestaurantsdata] = useState({});
-  //   const collectionsData = useSelector(
-  //     (state) => state.collectionsData.collectionsData
-  //   );
 
   useEffect(() => {
     axios
@@ -23,16 +21,14 @@ const CollectionDetails = () => {
       });
   }, []);
 
-//   console.log(restaurantsdata);
-
+  //   console.log(restaurantsdata);
   return (
     <>
-      <CollectionHeader restaurantsdata={restaurantsdata} />
-      <RestaurantCard restaurantsdata={restaurantsdata} />
-      <ExploreNear />
+      <RestauranHeader restaurantsdata={restaurantsdata} />
+      <FoodItemCard restaurantsdata={restaurantsdata} onOpenOrderForm={onOpenOrderForm}/>
       <Footer />
     </>
   );
 };
 
-export default CollectionDetails;
+export default RestaurantDetails;

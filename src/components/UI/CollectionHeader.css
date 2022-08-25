@@ -9,7 +9,7 @@
     padding: 1rem 0;
 }
 
-.collection_navbar_logo img{
+.collection_navbar_logo img {
     cursor: pointer;
     width: 140px;
     height: 30px;
@@ -38,10 +38,72 @@
     opacity: 0.35;
 }
 
+.collection_header_banner {
+    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.collection_header_banner img {
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.collection_header_banner_txt {
+    background: linear-gradient(9.64deg, rgba(0, 0, 0, 0.71) 13.22%, rgba(0, 0, 0, 0.05) 44.28%);
+    height: 16rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    padding: 11rem 0.5rem 0rem 0.5rem;
+}
+
+.collection_header_banner_txt h3 {
+    font-weight: 500;
+    color: var(--white-font);
+    font-size: 1.2rem;
+}
+
+.collection_header_banner_txt p {
+    font-weight: 300;
+    color: var(--white-font);
+    font-size: 0.7rem;
+    margin: 0.3rem 0;
+    margin-left: 0.1rem;
+}
+
+.collection_header_banner_txt span {
+    font-weight: 300;
+    color: var(--white-font);
+    font-size: 0.7rem;
+    margin-left: 0.1rem;
+}
+
 /* Responsive Style */
 
 @media only screen and (min-width: 1200px) {
     .collection_header_container {
         padding: 0rem 11%;
-    }    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .collection_header_banner_txt {
+        padding: 10rem 2rem 0rem 2rem;
+    }
+    .collection_header_banner_txt h3 {
+        font-size: 2.2rem;
+    }
+    
+    .collection_header_banner_txt p {
+        font-size: 0.8rem;
+    }
+    
+    .collection_header_banner_txt span {
+        font-size: 0.8rem;
+    }
 }

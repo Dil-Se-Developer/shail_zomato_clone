@@ -1,0 +1,20 @@
+.restaurant_header_container {
+    padding: 0rem 1rem;
+}
+
+.restaurant_header_banner img {
+    object-fit: contain;
+    border: none;
+}
+
+.restaurant_header_banner_txt {
+    background: linear-gradient(9.64deg, rgba(0, 0, 0, 0.3) 13.22%, rgba(0, 0, 0, 0.05) 44.28%);
+}
+
+/* Responsive Design */
+
+@media only screen and (min-width: 1200px) {
+    .restaurant_header_container {
+        padding: 0rem 11%;
+    }
+}

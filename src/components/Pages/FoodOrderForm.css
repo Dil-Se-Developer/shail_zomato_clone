@@ -1,0 +1,25 @@
+.food_order_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.food_order_txt_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.food_order_txt_section h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4f4f4f;
+}
+
+.food_order_txt_section svg {
+    cursor: pointer;
+}
+
+.margin_input {
+    margin-top: 1.4rem;
+}

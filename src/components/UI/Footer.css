@@ -111,12 +111,12 @@
     margin: 0.5rem 0 0.9rem 0;
 }
 
-.footer_mid_social_icons svg {
+.footer_mid_social_icons a {
     margin-left: 0.5rem;
     cursor: pointer;
 }
 
-.footer_mid_social_icons svg:nth-child(1){
+.footer_mid_social_icons a:nth-child(1){
     margin: 0;
 }
 
@@ -157,7 +157,7 @@
     .footer_mid_app img:nth-child(2) {
         margin-left: 0rem;
     }    
-    .footer_mid_social_icons svg {
+    .footer_mid_social_icons a {
         margin-left: 0.3rem;
         cursor: pointer;
     }
