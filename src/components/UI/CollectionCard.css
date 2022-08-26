@@ -1,24 +1,28 @@
 .collectiondata_bg {
     cursor: pointer;
     position: relative;
+    flex: 45%;
 }
 
 .collectiondata_bg img {
     border-radius: 0.4rem;
-    height: 15.5rem;
-    width: 14.2rem;
+    height: 16rem;
+    width: 100%;
     object-fit: cover;
-    margin-right: 0.5rem;
 }
 
 .collectiondata_txt {
+    background: linear-gradient(9.64deg, rgba(0, 0, 0, 0.71) 13.22%, rgba(0, 0, 0, 0.05) 44.28%);
+    height: 16rem;
+    width: 100%;
     position: absolute;
-    bottom: 0.6rem;
-    left: 0.5rem;
+    top: 0;
+    border-radius: 0.4rem;
+    padding: 13rem 0.5rem 1rem 0.5rem;
 }
 
 .collectiondata_txt h4 {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 300;
     color: var(--white-font);
 }
@@ -26,7 +30,7 @@
 .collectiondata_txt p {
     font-weight: 300;
     color: var(--white-font);
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     margin-top: 0.25rem;
 }
 
@@ -34,41 +38,21 @@
     margin-left: 0.5rem;
 }
 
+
 /* Responsive Style */
 
-@media only screen and (max-width: 1199px) {
-    .collectiondata_bg img {
-        width: 11rem;
+@media only screen and (min-width: 576px) {
+    .collectiondata_bg {
+        flex: 20%;
     }
 }
 
-@media only screen and (max-width: 991px) {
-    .collectiondata_bg img {
-        width: 9rem;
+@media only screen and (min-width: 992px) {
+    .collectiondata_txt h4 {
+        font-size: 0.9rem;
+    }
+
+    .collectiondata_txt p {
+        font-size: 0.75rem;
     }
 }
-
-@media only screen and (max-width: 767px) {
-    .collectiondata_bg img {
-        width: 6.7rem;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    .collectiondata_bg img {
-        width: 7rem;
-        margin-top: 0.25rem;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .collectiondata_bg img {
-        width: 7rem;
-    }
-}
-
-/* @media only screen and (max-width: 320px) {
-    .collectiondata_bg img {
-        width: 7rem;
-    }
-} */

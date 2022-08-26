@@ -84,5 +84,10 @@
 @media only screen and (max-width: 575px) {
     .subheader_txt {
         padding: 0rem 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .subheader_section { 
+        padding: 5rem 0rem 1.5rem 0rem;
     }
 }

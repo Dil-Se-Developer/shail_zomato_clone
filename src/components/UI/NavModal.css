@@ -1,0 +1,50 @@
+.nav_modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding: 0.8rem 1.05rem;
+    z-index: 10;
+    animation: slide-down 300ms ease-out forwards;
+}
+
+.nav_modal img {
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+}
+
+.navmodal_menu_section {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.9rem;
+    margin-top: 4rem;
+    margin-left: 0.5rem;
+}
+
+.navmodal_menu_section li{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #696969;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .nav_modal {
+        width: 22.1rem;
+        left: calc(50% - 11.05rem);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

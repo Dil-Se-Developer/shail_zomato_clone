@@ -13,11 +13,11 @@ const OrderOnline = () => {
           <p>Stay home and order to your doorstep</p>
         </div>
       </div>
-      <div className="orderonline_card dinning_card">
+      <div className="orderonline_card">
         <img src={orderimg2} alt="Dinning" />
         <div className="orderonline_card_text">
           <h3>Dinning</h3>
-          <p>View the city's favourite dinning venues</p>
+          <p>View the city's favourite dinning</p>
         </div>
       </div>
     </div>
