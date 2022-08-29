@@ -11,3 +11,7 @@
     border-radius: 0.25rem;
     font-size: 0.9rem;
 }
+
+.restaurant_card img{
+    width: auto;
+}

@@ -2,13 +2,13 @@ import React from "react";
 import "./FoodItemCard.css";
 
 const FoodItemCard = ({ restaurantsdata, onOpenOrderForm }) => {
-  const { fooditem } = restaurantsdata;
+  // const { fooditem } = restaurantsdata;
   // console.log(fooditem);
 
   return (
     <div className="restaurantcard_container">
-      {fooditem?.map((foodproduct) => (
-        <div key={foodproduct.id} className="foodrestaurant_card">
+      {restaurantsdata?.map((foodproduct) => (
+        <div key={foodproduct.id} className="foodrestaurant_card restaurant_card">
           <img src={foodproduct.fooditemimg} alt="restaurantimag" />
           <div className="foodrestaurant_card_txt">
             <h4>{foodproduct.fooditemname}</h4>
